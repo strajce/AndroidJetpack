@@ -27,8 +27,8 @@ class DetailsFragment : Fragment() {
             dogUuid = DetailsFragmentArgs.fromBundle(it).dogUuid
         }
 
-        btn_list.setOnClickListener {
-            Navigation.findNavController(it).navigate(DetailsFragmentDirections.detailsFragmentToListFragment())
-        }
+//        btn_list.setOnClickListener {
+//            Navigation.findNavController(it).navigate(DetailsFragmentDirections.detailsFragmentToListFragment())
+//        }
     }
 }

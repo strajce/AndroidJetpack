@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Dogs</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_details_fragment">Hello details fragment</string>
-    <string name="hello_list_fragment">Hello list fragment</string>
+    <string name="empty_details">No details</string>
+    <string name="empty_list">List is empty</string>
 </resources>
