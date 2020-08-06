@@ -1,13 +1,12 @@
-package com.example.dogs.view
+package com.example.dogs.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
 import com.example.dogs.R
-import kotlinx.android.synthetic.main.fragment_details.*
+import com.example.dogs.view.DetailsFragmentArgs
 
 class DetailsFragment : Fragment() {
 

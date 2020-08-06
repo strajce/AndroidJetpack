@@ -1,4 +1,4 @@
-package com.example.dogs.view
+package com.example.dogs.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
