@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.dogs.R
-import com.example.dogs.view.DetailsFragmentArgs
 
 class DetailsFragment : Fragment() {
 

@@ -10,10 +10,10 @@ class DogListViewModel : ViewModel() {
     val loading = MutableLiveData<Boolean>()
 
     fun loadData() {
-        val dog1 = DogBreedModel("1", "Poodle", "Description", null)
-        val dog2 = DogBreedModel("2", "Labrador", "Description", null)
-        val dog3 = DogBreedModel("3", "Golden", "Description", null)
-        val dog4 = DogBreedModel("4", "Husky", "Description", null)
+        val dog1 = DogBreedModel("1", "Poodle", "Description", "")
+        val dog2 = DogBreedModel("2", "Labrador", "Description", "")
+        val dog3 = DogBreedModel("3", "Golden", "Description", "")
+        val dog4 = DogBreedModel("4", "Husky", "Description", "")
 
         dogBreedList.value = arrayListOf<DogBreedModel>(dog1, dog2, dog3, dog4)
         dogLoadError.value = false

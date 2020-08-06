@@ -13,7 +13,7 @@
             tools:context=".view.fragment.ListFragment">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerViewList"
+                android:id="@+id/rcDogBreed"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -22,7 +22,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/emptyList"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:visibility="gone"
@@ -39,8 +39,8 @@
                 android:visibility="gone"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/recyclerViewList"
-                app:layout_constraintTop_toTopOf="@+id/recyclerViewList" />
+                app:layout_constraintStart_toStartOf="@+id/rcDogBreed"
+                app:layout_constraintTop_toTopOf="@+id/rcDogBreed" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
