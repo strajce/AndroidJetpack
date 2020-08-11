@@ -41,6 +41,15 @@ class ListFragment : Fragment() {
             adapter = dogBreedAdapter
         }
 
+        refreshLayout.setOnRefreshListener {
+            rcDogBreed.visibility = View.GONE
+            emptyList.visibility = View.GONE
+            progressBar.visibility = View.VISIBLE
+
+            viewModel.loadData()
+            refreshLayout.isRefreshing = true
+        }
+
         observeData()
     }
 

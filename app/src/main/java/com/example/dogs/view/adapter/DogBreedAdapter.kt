@@ -1,5 +1,6 @@
 package com.example.dogs.view.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -27,15 +28,14 @@ class DogBreedAdapter(val dogBreedList: ArrayList<DogBreedModel>) :
 
     override fun getItemCount() = dogBreedList.size
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: DogBreedViewHolder, position: Int) {
         holder.view.dogName.text = dogBreedList[position].dogBreedName
-        holder.view.shortDetails.text = dogBreedList[position].dogBreedDescription
+        holder.view.shortDetails.text = dogBreedList[position].dogBreedDescription + " " + dogBreedList[position].dogTemperament
         holder.view.setOnClickListener {
             Navigation.findNavController(it).navigate(ListFragmentDirections.listFragmentToDetailsFragment())
         }
     }
 
-    class DogBreedViewHolder(var view: View) : RecyclerView.ViewHolder(view) {
-
-    }
+    class DogBreedViewHolder(var view: View) : RecyclerView.ViewHolder(view)
 }
